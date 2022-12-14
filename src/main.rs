@@ -27,6 +27,8 @@ struct Args {
     verbose: bool,
 }
 
+// TODO: put functions in lib file
+
 /// load_yml loads a yaml file, used here to specifiy minimum number of lines per file type.
 fn load_yml(filename: &PathBuf) -> Vec<yaml_rust::Yaml> {
     let mut file =
