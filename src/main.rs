@@ -255,7 +255,7 @@ fn main() -> io::Result<()> {
         if n_col_data != n_col_header {
             if args.verbose {
                 println!(
-                    "nok: {:?}\n  {n_col_data} fields in last line of data but header has {n_col_header} -> remove line",
+                    "nok: {:?}\n  {n_col_data} field(s) in last line of data but header has {n_col_header} -> remove line",
                     file_path
                 )
             };
@@ -275,7 +275,7 @@ fn main() -> io::Result<()> {
             if have < want {
                 if args.verbose {
                     println!(
-                        "nok: {:?}\n  last field of last line has {have} characters, but want {want} -> remove line",
+                        "nok: {:?}\n  last field of last line has {have} character(s), but want {want} -> remove line",
                         file_path
                     )
                 };
@@ -318,10 +318,10 @@ fn main() -> io::Result<()> {
             lines_to_file(file_path, content)?;
         }
 
-        // write false and not an oscar file:
-        if args.verbose {
-            println!("ok:  {:?}", file_path)
-        }
+        // // write false and not an oscar file:
+        // if args.verbose {
+        //     println!("ok:  {:?}", file_path)
+        // }
     }
 
     // dump an empty file after all files were cleaned
