@@ -6,6 +6,13 @@ authors = ["Florian Obersteiner, f.obersteiner@kit.edu"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "cleaner_lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "v25_datacleaner"
+path = "src/bin.rs"
 
 [dependencies]
 clap = { version = "4.0.29", features = ["derive"] }
