@@ -1,7 +1,7 @@
 [package]
 name = "v25_datacleaner"
 description = "clean V25 logfiles from incomplete lines etc."
-version = "0.1.2"
+version = "0.1.3"
 authors = ["Florian Obersteiner, f.obersteiner@kit.edu"]
 edition = "2021"
 
